@@ -1,0 +1,78 @@
+@use '../mixins/responsive.scss' as *;
+
+.button {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    &__top {
+        background-color: white;
+        border: 1px solid var(--pink);
+        color: var(--pink);
+        font-size: .63rem;
+        width: 6rem;
+        height: 1.5rem;
+
+        @include responsive(desktop) {
+            font-size: 0.9rem;
+            width: 136px;
+            height: 40px;
+        }
+    }
+
+    &__top:hover {
+        @include responsive(desktop) {
+            color: var(--grayishblue);
+        }
+    }
+
+    &__header,
+    &__footer {
+        background-color: var(--pink);
+        color: white;
+    }
+
+    &__header:hover,
+    &__footer:hover {
+        @include responsive(desktop) {
+            background-color: #ff9adb;
+        }
+    }
+
+    &__header {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .75rem;
+        width: 240px;
+        height: 40px;
+
+        @include responsive(desktop) {
+            font-size: 0.9rem;
+            width: 280px;
+            height: 50px;
+            margin-inline: auto;
+        }
+    }
+
+    &__footer {
+        width: 200px;
+        height: 40px;
+        font-size: 10px;
+
+        @include responsive(desktop) {
+            font-size: 1.25rem;
+            border-radius: 3rem;
+            width: 400px;
+            height: 5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &--shadow {
+        box-shadow: 0 4px .75rem rgba(0, 0, 0, 0.2);
+    }
+}

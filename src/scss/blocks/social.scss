@@ -1,0 +1,21 @@
+@use '../mixins/responsive.scss' as *;
+
+.social {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    @include responsive(desktop) {
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    //&__link {}
+
+    &__link:hover {
+        @include responsive(desktop) {
+            color: #00c7fa;
+        }
+    }
+}

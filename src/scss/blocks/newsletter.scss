@@ -1,0 +1,8 @@
+@use '../mixins/responsive.scss' as *;
+
+.form {
+
+    &__input {}
+
+    &__submit {}
+}

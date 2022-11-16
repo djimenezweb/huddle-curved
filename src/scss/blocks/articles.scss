@@ -1,0 +1,103 @@
+@use '../mixins/responsive.scss' as *;
+@use '../functions/image.scss' as *;
+
+.article {
+    padding: 1.5rem;
+    margin-bottom: 265px;
+    position: relative;
+
+    @include responsive(desktop) {
+        display: flex;
+        padding: 54px 2rem 54px 7.5rem;
+        justify-content: space-between;
+    }
+
+    &--reverse {
+        @include responsive(desktop) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__pic {
+        @include responsive(desktop) {
+            width: 400px;
+        }
+    }
+
+    &__info {
+        @include responsive(desktop) {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.article-small {
+    @include responsive(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 265px;
+    }
+}
+
+.first-section,
+.last-section {
+    background-color: var(--very-pale-blue);
+}
+
+.first-section::before,
+.first-section::after,
+.last-section::before,
+.last-section::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 165px;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.first-section::before {
+    background-image: image("bg-section-top-mobile-1.svg");
+    top: -165px;
+
+    @include responsive(desktop) {
+        background-image: image("bg-section-top-desktop-1.svg");
+        top: -165px;
+    }
+}
+
+.first-section::after {
+    background-image: image("bg-section-top-mobile-1.svg");
+    bottom: -165px;
+
+    @include responsive(desktop) {
+        background-image: image("bg-section-bottom-desktop-1.svg");
+        bottom: -165px;
+    }
+}
+
+.last-section::before {
+    height: 156px;
+    background-image: image("bg-section-top-mobile-2.svg");
+    top: -156px;
+
+    @include responsive(desktop) {
+        background-image: image("bg-section-top-desktop-2.svg");
+        top: -156px;
+    }
+}
+
+.last-section::after {
+    background-image: image("bg-section-top-mobile-2.svg");
+    bottom: -165px;
+
+    @include responsive(desktop) {
+        background-image: image("bg-section-bottom-desktop-2.svg");
+        bottom: -165px;
+    }
+}

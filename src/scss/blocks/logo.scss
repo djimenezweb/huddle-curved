@@ -1,0 +1,22 @@
+@use '../mixins/responsive.scss' as *;
+
+.logo {
+    width: 104px;
+
+    @include responsive(desktop) {
+        width: 200px;
+    }
+
+    &--margin {
+        margin-bottom: 2.5rem;
+    }
+
+    &-white {
+        width: 166px;
+
+        @include responsive(desktop) {
+            width: 240px;
+        }
+    }
+
+}

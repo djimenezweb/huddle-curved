@@ -1,0 +1,26 @@
+@use '../mixins/responsive.scss' as *;
+
+.text {
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    line-height: 1.3;
+
+    @include responsive(desktop) {
+        text-align: left;
+        font-size: 1.125rem;
+        line-height: 27px;
+    }
+}
+
+.header__text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+
+    @include responsive(desktop) {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
