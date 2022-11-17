@@ -5,7 +5,7 @@
     text-align: center;
 
     @include responsive(desktop) {
-        padding: 3rem 5rem;
+        padding: 5rem 5rem 0;
         margin-bottom: 10rem;
     }
 
@@ -15,7 +15,7 @@
         align-items: center;
 
         @include responsive(desktop) {
-            margin-bottom: 70px;
+            margin-bottom: 14rem;
         }
     }
 
@@ -24,6 +24,8 @@
         padding: 0 20px;
 
         @include responsive(desktop) {
+            font-size: 1.25rem;
+            line-height: 1.5;
             margin-inline: auto;
             width: 600px;
             padding: 0;
@@ -35,7 +37,7 @@
         margin-inline: auto;
 
         @include responsive(desktop) {
-            max-width: 700px;
+            max-width: 64rem;
         }
     }
 }

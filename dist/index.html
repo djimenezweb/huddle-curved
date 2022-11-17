@@ -18,7 +18,7 @@
     <header class="header">
         <div class="header__top">
             <img id="logo" class="logo" src="assets/images/logo.svg" alt="logo" />
-            <a class="button button__top button--shadow" href="#">Try It Free</a>
+            <a class="button button__top" href="#">Try It Free</a>
         </div>
         <h1 class="header__title">
             Build The Community Your Fans Will Love
@@ -87,32 +87,39 @@
     </main>
 
     <footer class="footer">
-        <img class="logo-white logo--margin" src="assets/images/logo-white.svg">
-        <p class="footer__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua
-        </p>
-        <div class="footer__grid">
-            <img src="assets/images/icon-phone.svg">
-            <p class="footer__text">+1-543-123-4567</p>
-            <img src="assets/images/icon-email.svg">
-            <p class="footer__text">example@huddle.com</p>
-        </div>
-        <div class="footer__column social">
-            <a href="#" class="social__link"><i class="social__icon fa-brands fa-square-facebook"></i></a>
-            <a href="#" class="social__link"><i class="social__icon fa-brands fa-instagram"></i></a>
-            <a href="#" class="social__link"><i class="social__icon fa-brands fa-square-twitter"></i></a>
-        </div>
-
         <div class="newsletter">
-            <h3>>Newsletter</h3>
-            <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+            <h3 class="newsletter__title">NEWSLETTER</h3>
+            <p class="newsletter__text">To recieve tips on how to grow your community, sign up to our weekly newsletter.
+                We'll never
                 send you spam or pass on your email address</p>
             <form class="form">
-                <input class="form__input" type="email">
+                <div class="form__field">
+                    <input class="form__input" type="email">
+                    <span class="form__invalid">Check your email please</span>
+                </div>
                 <input class="form__submit" type="submit" value="Subscribe">
             </form>
         </div>
+        <div class="footer-left">
+            <img class="logo-white logo--margin" src="assets/images/logo-white.svg">
+            <p class="footer__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="footer__grid">
+                <img src="assets/images/icon-phone.svg">
+                <p class="footer__info">Phone: +1-543-123-4567</p>
+                <img src="assets/images/icon-email.svg">
+                <p class="footer__info">example@huddle.com</p>
+            </div>
+            <div class="footer__column social">
+                <a href="#" class="social__link"><i class="social__icon fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="social__link"><i class="social__icon fa-brands fa-instagram"></i></a>
+                <a href="#" class="social__link"><i class="social__icon fa-brands fa-square-twitter"></i></a>
+            </div>
+        </div>
+
+
     </footer>
 </body>
 

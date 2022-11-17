@@ -1,11 +1,17 @@
 @use '../mixins/responsive.scss' as *;
 
 .diagram {
-    width: 880px;
+
     margin-inline: auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     margin-bottom: 280px;
+
+    @include responsive(desktop) {
+        width: 880px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     &__number {
         margin: 12px 0;
