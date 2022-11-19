@@ -44,8 +44,7 @@
     }
 
     &__header {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 6.5rem;
         font-size: .75rem;
         width: 240px;
         height: 40px;
@@ -62,7 +61,7 @@
     &__footer {
         width: 200px;
         height: 40px;
-        font-size: 10px;
+        font-size: 12px;
 
         @include responsive(desktop) {
             font-size: 1.25rem;

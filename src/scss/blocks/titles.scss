@@ -3,12 +3,12 @@
 h1,
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .header__title {
     font-family: 'Poppins', sans-serif;
-    padding: 4rem 2rem 0;
+    padding: 7rem 2rem 1rem;
     text-align: center;
     font-size: 1.5rem;
 
@@ -26,13 +26,16 @@ h2 {
     text-align: center;
 
     @include responsive(desktop) {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         text-align: left;
     }
 }
 
 .article-small__title {
-    font-size: 1.125rem;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 40px;
 
     @include responsive(desktop) {
         font-size: 2.5rem;

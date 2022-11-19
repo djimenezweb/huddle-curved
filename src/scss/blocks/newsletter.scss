@@ -6,14 +6,23 @@
     }
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 20px;
         margin: 0;
+
+        @include responsive(desktop) {
+            font-size: 1.5rem;
+        }
     }
 
     &__text {
         max-width: 344px;
         font-size: 14px;
         margin-bottom: 2.5rem;
+        line-height: 24px;
+
+        @include responsive(desktop) {
+            line-height: auto;
+        }
     }
 }
 
@@ -21,10 +30,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 104px;
 
     @include responsive(desktop) {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 0;
     }
 
     &__field {
@@ -34,8 +46,10 @@
     &__input {
         border-radius: .5rem;
         width: 320px;
+        margin-bottom: 1rem;
         height: 48px;
         color: var(--dark-cyan);
+        border: none;
 
         &:invalid {
             border: 1px solid red;
@@ -43,11 +57,13 @@
     }
 
     &__submit {
+        font-weight: 700;
         background-color: var(--pink);
         border-radius: .5rem;
         color: white;
         width: 160px;
         height: 48px;
+        border: none;
     }
 }
 

@@ -3,12 +3,13 @@
 
 .article {
     padding: 1.5rem;
-    margin-bottom: 120px;
+    margin-bottom: 200px;
     position: relative;
 
     @include responsive(desktop) {
+        margin-bottom: 320px;
         display: flex;
-        padding: 54px 2rem 54px 7.5rem;
+        padding: 54px 8rem;
         justify-content: space-between;
     }
 
@@ -19,14 +20,18 @@
     }
 
     &__pic {
+        width: 258px;
+        margin: 0 auto 4.6rem;
+
         @include responsive(desktop) {
-            width: 400px;
+            width: 520px;
+            margin: 0;
         }
     }
 
     &__info {
         @include responsive(desktop) {
-            width: 500px;
+            width: 520px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -35,13 +40,13 @@
 }
 
 .article-small {
-    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
 
     @include responsive(desktop) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 325px;
     }
 }
@@ -117,5 +122,13 @@
         background-image: image("bg-section-bottom-desktop-2.svg");
         height: 165px;
 
+    }
+}
+
+.last-section {
+    padding-bottom: 7rem;
+
+    @include responsive(desktop) {
+        padding-bottom: 54px;
     }
 }

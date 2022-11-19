@@ -5,8 +5,8 @@
     position: relative;
     background-color: var(--dark-cyan);
     color: white;
-    padding: 20px 20px 20px 20px;
-    height: 564px;
+    padding: 54px 28px 20px;
+    height: 750px;
     font-size: 14px;
 
     @include responsive(desktop) {
@@ -29,17 +29,29 @@
     }
 
     &__grid {
-        margin-bottom: 80px;
+        margin-bottom: 3rem;
         max-width: 375px;
         display: grid;
         grid-template-columns: 1.5rem 1fr;
         gap: 1rem;
+
+        @include responsive(desktop) {
+            margin-bottom: 80px;
+        }
+
     }
 
     &__text {
         max-width: 340px;
-        margin: 0 0 1.5rem;
-        font-size: 0.875rem;
+        margin: 0 0 3rem;
+        font-size: 14px;
+        line-height: 24px;
+
+        @include responsive(desktop) {
+            margin: 0 0 1.5rem;
+            font-size: 0.875rem;
+            line-height: auto;
+        }
     }
 
     &__info {

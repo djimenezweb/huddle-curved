@@ -1,9 +1,5 @@
 @use '../mixins/responsive.scss' as *;
 
-* {
-    outline: 1px dashed rgba(255, 0, 0, 0.4);
-}
-
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;

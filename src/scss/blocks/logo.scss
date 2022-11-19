@@ -8,11 +8,15 @@
     }
 
     &--margin {
-        margin-bottom: 2.5rem;
+        margin-bottom: 1rem;
+
+        @include responsive(desktop) {
+            margin-bottom: 2.5rem;
+        }
     }
 
     &-white {
-        width: 166px;
+        width: 200px;
 
         @include responsive(desktop) {
             width: 240px;
